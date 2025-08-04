@@ -8,33 +8,52 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 45 20% 98%;
+    --foreground: 350 15% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 350 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 350 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 350 75% 45%;
+    --primary-foreground: 45 20% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 25 85% 60%;
+    --secondary-foreground: 350 15% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 45 20% 95%;
+    --muted-foreground: 350 15% 60%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 15 90% 65%;
+    --accent-foreground: 350 15% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 45 20% 90%;
+    --input: 45 20% 90%;
+    --ring: 350 75% 45%;
+
+    /* Traditional Rajputi colors */
+    --royal-red: 350 75% 45%;
+    --royal-gold: 45 85% 55%;
+    --royal-maroon: 350 60% 25%;
+    --warm-cream: 45 40% 92%;
+    --deep-orange: 25 85% 60%;
+    
+    /* Gradients */
+    --gradient-royal: linear-gradient(135deg, hsl(var(--royal-red)), hsl(var(--deep-orange)));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--royal-gold)), hsl(var(--secondary)));
+    --gradient-elegant: linear-gradient(180deg, hsl(var(--warm-cream)), hsl(var(--background)));
+    
+    /* Shadows */
+    --shadow-royal: 0 10px 30px -10px hsl(var(--royal-red) / 0.3);
+    --shadow-warm: 0 5px 20px -5px hsl(var(--royal-gold) / 0.2);
+    
+    /* Animations */
+    --transition-elegant: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
 
