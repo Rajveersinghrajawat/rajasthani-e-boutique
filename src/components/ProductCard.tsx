@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Heart, ShoppingBag, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -49,15 +50,17 @@ const ProductCard = ({
   };
 
   return (
-    <Card className="group cursor-pointer overflow-hidden border-border hover:shadow-warm transition-all duration-500 hover:scale-105 bg-card">
+    <Card className="group overflow-hidden border-border hover:shadow-warm transition-all duration-500 hover:scale-105 bg-card">
       <CardContent className="p-0">
         <div className="relative overflow-hidden">
           {/* Product Image */}
-          <img 
-            src={image}
-            alt={name}
-            className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
-          />
+          <Link to={`/product/${id}`}>
+            <img 
+              src={image}
+              alt={name}
+              className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700 cursor-pointer"
+            />
+          </Link>
           
           {/* Badges */}
           <div className="absolute top-4 left-4 flex flex-col gap-2">
@@ -104,9 +107,11 @@ const ProductCard = ({
             ))}
           </div>
 
-          <h3 className="text-lg font-serif font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-            {name}
-          </h3>
+          <Link to={`/product/${id}`}>
+            <h3 className="text-lg font-serif font-semibold text-foreground mb-2 group-hover:text-primary transition-colors cursor-pointer">
+              {name}
+            </h3>
+          </Link>
           
           <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
             {description}

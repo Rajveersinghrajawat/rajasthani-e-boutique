@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Search, Heart, User, ShoppingBag, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -9,15 +10,16 @@ const Header = () => {
   const [cartCount] = useState(2);
 
   const navItems = [
-    'HOME',
-    'PURE POSHAK', 
-    'SEMI PURE POSHAK',
-    'STITCHED POSHAKS',
-    'REGULAR SUIT',
-    'FABRIC',
-    'ACCESSORIES',
-    'BLOG',
-    'CONTACT US'
+    { name: 'HOME', href: '/' },
+    { name: 'PRODUCTS', href: '/products' },
+    { name: 'PURE POSHAK', href: '/products' }, 
+    { name: 'SEMI PURE POSHAK', href: '/products' },
+    { name: 'STITCHED POSHAKS', href: '/products' },
+    { name: 'REGULAR SUIT', href: '/products' },
+    { name: 'FABRIC', href: '/products' },
+    { name: 'ACCESSORIES', href: '/products' },
+    { name: 'BLOG', href: '#' },
+    { name: 'CONTACT US', href: '#' }
   ];
 
   return (
@@ -34,21 +36,23 @@ const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-3xl font-serif text-primary font-bold tracking-wide">
-              RANISA
-            </h1>
+            <Link to="/">
+              <h1 className="text-3xl font-serif text-primary font-bold tracking-wide hover:text-primary/80 transition-colors">
+                RANISA
+              </h1>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
-                key={item}
-                href="#"
+              <Link
+                key={item.name}
+                to={item.href}
                 className="text-sm font-medium text-foreground hover:text-primary transition-colors duration-300"
               >
-                {item}
-              </a>
+                {item.name}
+              </Link>
             ))}
           </nav>
 
@@ -106,13 +110,14 @@ const Header = () => {
         {isMenuOpen && (
           <div className="lg:hidden border-t border-border py-4 space-y-4 animate-fade-in">
             {navItems.map((item) => (
-              <a
-                key={item}
-                href="#"
+              <Link
+                key={item.name}
+                to={item.href}
                 className="block text-sm font-medium text-foreground hover:text-primary transition-colors"
+                onClick={() => setIsMenuOpen(false)}
               >
-                {item}
-              </a>
+                {item.name}
+              </Link>
             ))}
           </div>
         )}
