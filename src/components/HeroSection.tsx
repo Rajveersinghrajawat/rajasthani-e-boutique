@@ -42,11 +42,8 @@ const HeroSection = () => {
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text'
                 }}>
-              Ranisa
+                AARTI
             </h2>
-            <p className="text-lg text-primary-foreground/80 font-medium">
-              By A & S Daughter
-            </p>
           </div>
 
           {/* CTA Button */}

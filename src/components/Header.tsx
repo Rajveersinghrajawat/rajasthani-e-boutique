@@ -10,7 +10,6 @@ const Header = () => {
   const [cartCount] = useState(2);
 
   const navItems = [
-    { name: 'HOME', href: '/' },
     { name: 'PRODUCTS', href: '/products' },
     { name: 'PURE POSHAK', href: '/products' }, 
     { name: 'SEMI PURE POSHAK', href: '/products' },
@@ -18,8 +17,6 @@ const Header = () => {
     { name: 'REGULAR SUIT', href: '/products' },
     { name: 'FABRIC', href: '/products' },
     { name: 'ACCESSORIES', href: '/products' },
-    { name: 'BLOG', href: '#' },
-    { name: 'CONTACT US', href: '#' }
   ];
 
   return (
@@ -38,7 +35,7 @@ const Header = () => {
           <div className="flex items-center">
             <Link to="/">
               <h1 className="text-3xl font-serif text-primary font-bold tracking-wide hover:text-primary/80 transition-colors">
-                RANISA
+                AARTI
               </h1>
             </Link>
           </div>
@@ -49,7 +46,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors duration-300"
+                className="text-sm font-small text-foreground hover:text-primary transition-colors duration-300"
               >
                 {item.name}
               </Link>
@@ -58,8 +55,8 @@ const Header = () => {
 
           {/* Search and Icons */}
           <div className="flex items-center space-x-4">
-            {/* Search */}
-            <div className="hidden md:flex items-center">
+         
+            {/* <div className="hidden md:flex items-center">
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                 <Input
@@ -68,9 +65,7 @@ const Header = () => {
                   className="pl-10 pr-4 py-2 w-64 border-border focus:border-primary transition-colors"
                 />
               </div>
-            </div>
-
-            {/* Icons */}
+            </div> */}
             <Button variant="ghost" size="icon" className="hover:bg-muted">
               <Search className="h-5 w-5 md:hidden" />
             </Button>

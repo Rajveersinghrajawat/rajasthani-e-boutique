@@ -14,9 +14,9 @@ const Footer = () => {
           <div className="space-y-6">
             <div>
               <h3 className="text-3xl font-serif font-bold text-royal-gold mb-2">
-                RANISA
+                AARTI
               </h3>
-              <p className="text-sm opacity-80">By A & S Daughter</p>
+              <p className="text-sm opacity-80">By Rajveer Singh</p>
             </div>
             
             <p className="text-sm opacity-90 leading-relaxed">
@@ -110,9 +110,9 @@ const Footer = () => {
       <div className="border-t border-white/20">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm opacity-90">
-            <p>© {currentYear} Ranisa. All rights reserved.</p>
+            <p>© {currentYear} AARTI. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <span>Made with ❤️ in Rajasthan</span>
+              <span>Made & Develop By CodeSavvyNest</span>
             </div>
           </div>
         </div>
