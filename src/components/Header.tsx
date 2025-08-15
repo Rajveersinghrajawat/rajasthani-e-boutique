@@ -34,9 +34,10 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/">
-              <h1 className="text-3xl font-serif text-primary font-bold tracking-wide hover:text-primary/80 transition-colors">
+              {/* <h1 className="text-3xl font-serif text-primary font-bold tracking-wide hover:text-primary/80 transition-colors">
                 AARTI
-              </h1>
+              </h1> */}
+             <img src='/logo.png' alt='ravarti' className='w-[100px]' />
             </Link>
           </div>
 
@@ -79,14 +80,17 @@ const Header = () => {
             </Button>
             
             <Button variant="ghost" size="icon" className="hover:bg-muted relative">
-              <ShoppingBag className="h-5 w-5" />
-              {cartCount > 0 && (
-                <Badge 
-                  className="absolute -top-2 -right-2 h-5 w-5 rounded-full p-0 flex items-center justify-center bg-primary text-primary-foreground text-xs"
-                >
-                  {cartCount}
-                </Badge>
-              )}
+           <Link to="/cart">
+                <ShoppingBag className="h-5 w-5" />
+                {cartCount > 0 && (
+                  <Badge
+                    className="absolute -top-2 -right-2 h-5 w-5 rounded-full p-0 flex items-center justify-center bg-primary text-primary-foreground text-xs"
+                  >
+                    {cartCount}
+                  </Badge>
+                )}
+              </Link>
+           
             </Button>
 
             {/* Mobile Menu Toggle */}
