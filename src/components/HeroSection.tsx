@@ -42,7 +42,8 @@ const HeroSection = () => {
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text'
                 }}>
-                AARTI
+                RAVARTI<br/>
+                CULTURE
             </h2>
           </div>
 
