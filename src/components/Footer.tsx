@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="space-y-6">
             <div>
               <h3 className="text-3xl font-serif font-bold text-royal-gold mb-2">
-                AARTI
+                Ravarti Culture
               </h3>
               <p className="text-sm opacity-80">By Rajveer Singh</p>
             </div>
@@ -76,15 +76,15 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-royal-gold" />
-                <span className="text-sm">+91 98765 43210</span>
+                <span className="text-sm">+91 9358004791</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-royal-gold" />
-                <span className="text-sm">info@ranisaonline.com</span>
+                <span className="text-sm">info@ravarti.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-royal-gold mt-1" />
-                <span className="text-sm">123 Heritage Street, Rajasthan, India</span>
+                <span className="text-sm">Tirupati Nagar, Nandri, Rajasthan, India</span>
               </div>
             </div>
 
