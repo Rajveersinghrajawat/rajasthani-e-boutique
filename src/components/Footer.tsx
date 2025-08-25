@@ -80,7 +80,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-royal-gold" />
-                <span className="text-sm">info@ravarti.com</span>
+                <span className="text-sm">info@ravarticulture.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-royal-gold mt-1" />
@@ -110,7 +110,7 @@ const Footer = () => {
       <div className="border-t border-white/20">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm opacity-90">
-            <p>© {currentYear} AARTI. All rights reserved.</p>
+            <p>© {currentYear} RAVARTI CULTURE. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <span>Made & Develop By CodeSavvyNest</span>
             </div>
