@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+
+::-webkit-scrollbar {
+  width: 6px;              
+  height: 6px;              
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ed8241; 
+  border-radius: 999px;      
+  border: 2px solid transparent; 
+  background-clip: padding-box;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  filter: brightness(0.95);
+  transform: scale(1.02);
+}
+
+
+* {
+  scrollbar-width: thin;              
+  scrollbar-color: #ed8241 transparent; 
+}
+
+.custom-scroll {
+  overflow: auto;
+  scrollbar-width: thin;
+
+}
+
+.custom-scroll::-webkit-scrollbar { width: 6px; height: 6px; }
+.custom-scroll::-webkit-scrollbar-track { background: transparent; }
+.custom-scroll::-webkit-scrollbar-thumb { background-color: #ed8241; border-radius: 999px; }
+
+
+.container{
+  max-width: 1400px;
+}
+
+.textcolor {
+  background: linear-gradient(to right, #d53f3d, #e37240);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.customfont {
+  font-family: 'playfairDisplay';
+  font-weight: 500;
+}
+
+/* animated dot */
+
+
+.dots {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #eebd2b;
+  border-radius: 50%;
+  animation: bounce 1.5s infinite;
+}
+
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.dot:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-80px);
+  }
+}
+
+.login button:hover, .register button:hover{
+  background: white;
+  color: #d53f3d;
+  border: 1px solid #d53f3d;
+}
+
+
